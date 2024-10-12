@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Определение устройства</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #deviceType {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Определение типа устройства</h1>
+    <div id="deviceType">Проверка устройства...</div>
+
+    <script>
+        function detectDevice() {
+            const userAgent = navigator.userAgent;
+            const deviceTypeElement = document.getElementById('deviceType');
+
+            if (/mobile/i.test(userAgent)) {
+                deviceTypeElement.textContent = "Это мобильное устройство";
+            } else {
+                deviceTypeElement.textContent = "Это компьютер";
+            }
+        }
+
+        // Вызов функции для определения типа устройства
+        detectDevice();
+    </script>
+</body>
+</html>
