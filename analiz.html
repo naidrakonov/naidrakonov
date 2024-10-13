@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser and IP Info</title>
+</head>
+<body>
+    <h1>Browser and IP Info</h1>
+    <pre id="info"></pre>
+
+    <script>
+        // Получение информации о браузере
+        const browserInfo = {
+            browserName: navigator.userAgent,
+            appVersion: navigator.appVersion,
+            platform: navigator.platform,
+            language: navigator.language,
+        };
+
+        // Получение IP-адреса
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const info = {
+                    ...browserInfo,
+                    ip: data.ip,
+                };
+                document.getElementById('info').textContent = JSON.stringify(info, null, 4);
+            })
+            .catch(error => {
+                console.error('Error fetching IP address:', error);
+            });
+    </script>
+</body>
+</html>
