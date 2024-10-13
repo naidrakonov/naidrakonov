@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Занимает всю высоту видимой области */
+            margin: 0; /* Убираем стандартные отступы */
+            font-family: Arial, sans-serif; /* Задаем шрифт */
+            background-color: #edeef0; /* Цвет фона */
+        }
+
+        input[type="text"] {
+            width: 400px; /* Ширина поля ввода */
+            height: 40px; /* Высота поля ввода */
+            padding: 10px; /* Отступы внутри поля ввода */
+            font-size: 16px; /* Размер шрифта */
+            margin-bottom: 10px; /* Отступ снизу */
+            border: 1px solid #333333; /* Цвет рамки */
+            border-radius: 5px; /* Закругление углов */
+        }
+
+        button {
+            height: 40px; /* Высота кнопки */
+            font-size: 16px; /* Размер шрифта в кнопке */
+            cursor: pointer; /* Указывает, что кнопка кликабельна */
+            padding: 0 20px; /* Границы по бокам кнопки */
+            border: none; /* Убираем рамку */
+            background-color: #333333; /* Цвет фона кнопки */
+            color: white; /* Цвет текста */
+            border-radius: 5px; /* Закругление углов */
+        }
+
+        button:hover {
+            background-color: #ffffff; /* Цвет кнопки при наведении */
+            color: #000000;
+        }
+
+        #output {
+            margin-top: 20px; /* Отступ сверху для вывода */
+            font-size: 18px; /* Размер шрифта для вывода */
+        }
+    </style>
+</head>
+
+<body>
+   <h2>Чтобы узнать список всех заметок напишите: меню</h2>
+    <input type="text" id="userInput" placeholder="Введите команду...">
+    <button id="myButton">Отправить</button>
+    <p id="output"></p>
+
+    <script>
+        const button = document.getElementById('myButton');
+        const output = document.getElementById('output');
+        const userInput = document.getElementById('userInput');
+
+        button.addEventListener('click', function () {
+
+            const userInputValue = userInput.value; // Получаем значение из текстового поля
+            const trimmedValue = userInputValue.trim(); // Удаляем пробелы в начале и в конце строки
+            const command = trimmedValue.toLowerCase(); // Преобразуем строку в нижний регистр
+
+            // Результат в зависимости от введенной команды
+            switch (command) {
+                case 'меню':
+                    output.textContent = 'меню пока нет простите';
+                    break;
+                case 'най':
+                    output.textContent = 'най занят';
+                    break;
+                default:
+                    output.textContent = 'такой команды нет';
+            }
+
+            userInput.value = ''; // Очищаем поле ввода после нажатия кнопки
+        });
+    </script>
+
+</body>
+</html>
