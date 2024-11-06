@@ -20,7 +20,7 @@
 
 > Это цитата.
 
-![Альтернативный текст изображения](https://via.placeholder.com/150)
+![Альтернативный текст изображения](https://naidrakonov.github.io/anime/1000000.jpg)
 
 ```python
 # Это пример кода на Python
