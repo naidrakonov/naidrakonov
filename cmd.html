@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Командная строка Windows 11</h2> <!-- ===================================================================================================================== -->
+
+<p><b>wmic path SoftwareLicensingService get OA3xOriginalProductKey</b> - запрашивает WMI для извлечения оригинального ключа продукта Windows из службы лицензирования программного обеспечения</p>
+<p><b>wmic /?</b></p>
+
+<p><b>sfc /scannow</b> - проверка системных файлов на наличие повреждений и их восстановление</p>
+<p><b>sfc /?</b> - эта команда показывает справочные сведения о доступных параметрах для команды sfc</p>
+
+<p><b>cls</b> - очистка экрана командной строки</p>
+<p><b>mkdir [имя_папки]</b> - создать новую папку</p>
+<p><b>rmdir [имя_папки]</b> - удалить пустую папку</p>
+<p><b>cd [путь]</b> - изменить текущую директорию</p>
+<p><b>copy [файлы] [папка]</b> - копировать файлы</p>
+<p><b>move [файлы] [папка]</b> - переместить файлы</p>
+<p><b>dir</b> - показать список файлов и папок в текущей директории</p>
+
+<p><b>ipconfig</b> - Показывает информацию о сетевых подключениях и IP-адресах</p>
+<p><b>ipconfig /?</b></p>
+
+<p><b>ping [адрес]</b> - Проверяет доступность указанного адреса в сети</p>
+<p><b>ping /?</b></p>
+
+<p><b>tasklist</b> - Показывает список запущенных процессов</p>
+<p><b>netstat</b> - Показывает активные подключения и порты, которые используются на вашем компьютере</p>
+<p><b>powershell</b> - Запускает Windows PowerShell из командной строки. PowerShell предлагает более расширенные возможности по сравнению с обычной командной строкой</p>
+
+<p><b>color /?</b></p>
+
+<p><b>systeminfo</b> - эта команда выводит полную информацию о системе, включая операционную систему, процессор, память и сетевые адаптеры. Введите команду в командной строке</p>
+<p><b>wmic cpu get name, currentclockspeed, maxclockspeed</b> - информация о оперативной памяти</p>
+<p><b>wmic memorychip get capacity, speed</b> - информация о жестких дисках</p>
+<p><b>wmic diskdrive get model, size</b></p>
+
+<h2>PowerShell</h2>
+
+<p><b>Get-ComputerInfo</b> - выводит обширную информацию о системе</p>
+<p><b>Get-WmiObject Win32_Processor</b></p>
+<p><b>Get-WmiObject Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed</b>- выводит информацию о процессорах, включая количество, название и частоту</p>
+<p><b>Get-WmiObject Win32_DiskDrive | Select-Object Model, Size, MediaType</b>- выводит информацию о жестких дисках, таких как модель и размер</p>
+<p><b>Get-WmiObject Win32_PhysicalMemory | Select-Object Capacity, Speed, Manufacturer</b> - получите данные о модулях оперативной памяти</p>
+<p><b>Get-WmiObject Win32_NetworkAdapter | Select-Object Name, NetConnectionStatus, Speed</b> - получение информации о сетевых адаптерах</p>
+<p><b>Get-WmiObject -Query "SELECT * FROM Win32_Product" | Select-Object Name, Version</b> - просмотр списка установленных программ</p>
+<p><b>Get-WmiObject Win32_Battery | Select-Object EstimatedChargeRemaining, Status, DesignCapacity</b> - получение информации о батарее</p>
+
+<p><b>Get-WmiObject Win32_VideoController | Select-Object Name, AdapterRAM, DriverVersion</b> - получение информации о видеокартах, включая модель и общее количество видеопамяти</p>
+<p><b>Get-LocalUser | Select-Object Name, Enabled</b> - получение информации о текущем пользователе и его группах</p>
+<p><b>Update-Help</b> - Windows PowerShell не содержит файлов справки, однако можно просмотреть справочные разделы в Интернете или загрузить файлы справки с помощью командлета Update-Help на компьютер и затем отобразить справочные разделы с помощью командлета Get-Help в командной строке</p>
+<p><b>Get-Help</b></p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b></b></p>
+
+</body>
+</html>
