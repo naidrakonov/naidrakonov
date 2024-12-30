@@ -16,7 +16,7 @@
 
 > Аниме это святое
 
-![Альтернативный текст изображения](https://naidrakonov.github.io/naidrakonov/1000000.jpg)
+![Альтернативный текст изображения](https://github.com/naidrakonov/naidrakonov/blob/main/1000000000.jpg?raw=true)
 
 ```python
 # Это пример кода на Python
