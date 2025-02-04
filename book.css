@@ -1,18 +1,28 @@
-/*
-body {
+.cover {
 margin: 0;
+max-width: 100%;
+height: auto;
 padding: 0;
-height: 100vh;
-min-width: 1000px;
+min-width: 18.75em;
 }
-*/
+
+.main-block {
+font-family: Arial, sans-serif;
+padding: 0 25%;
+min-width: 18.75em;
+background-color: #212121;
+color: #ffffff;
+margin: 0;
+}
+
+/* ============================================================================================================= */
 
 .book {
 font-family: Arial, sans-serif;
 padding: 0 25%;
 min-width: 18.75em;
-background-color: #424242;
-color: #000000;
+background-color: #212121;
+color: #ffffff;
 }
 
 /* КАРТИНКА ======================================== */
@@ -61,11 +71,11 @@ font-family: Arial, sans-serif;
 background-color: #aeaeae;
 }
 
-/* АДАПТИВНЫЙ РЕЖИМ ======================================== */
+/* АДАПТИВНЫЙ РЕЖИМ ===================================================================================================== */
 
 @media (max-width: 800px) {
 
-.book {
+.main-block {
 padding: 0.5em;
 width: auto;
 }
