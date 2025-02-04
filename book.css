@@ -15,50 +15,34 @@ color: #ffffff;
 margin: 0;
 }
 
-/* ============================================================================================================= */
-
-.book {
-font-family: Arial, sans-serif;
-padding: 0 25%;
-min-width: 18.75em;
-background-color: #212121;
-color: #ffffff;
-}
-
-/* КАРТИНКА ======================================== */
-
-.book-img {
-margin: 0 0 0.5em 0;
-max-width: 100%;
-height: auto;
-}
-
-/* КАРТИНКА ======================================== */
-
-.book-color-div {
+.main-block-color-div {
 margin: 0 0 0.5em 0;
 padding: 0.5em;
-background-color: #f1f1f1;
+background-color: #333333;
 color: #000000;
 max-width: 100%;
 box-sizing: border-box;
 }
 
-/* ИКОНКИ ======================================== */
-
-.icon {
-width: 30px; /* Ширина изображения */
-height: 30px; /* Высота изображения */
-margin-right: 10px; /* Отступ между изображением и текстом */
+p {
+margin: 0 0 0.5em 0;
 }
 
-.container {
+/* КАРТИНКА ======================================== */
+
+.main-block-img {
+margin: 0 0 0.5em 0;
+max-width: 100%;
+height: auto;
+}
+
+.main-block-container {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
 
-.block {
+.main-block-container-mini-block {
 width: 33%;
 margin: 0;
 padding: 5px;
@@ -67,7 +51,7 @@ box-sizing: border-box;
 font-family: Arial, sans-serif;
 }
 
-.block:hover {
+.mini-block:hover {
 background-color: #aeaeae;
 }
 
