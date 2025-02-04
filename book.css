@@ -55,6 +55,38 @@ font-family: Arial, sans-serif;
 background-color: #aeaeae;
 }
 
+.logo {
+color: #ffffff;
+font-family: 'Bangers';
+font-size: 6em;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+user-select: none;
+text-align: center;
+}
+
+header {
+padding: 1em 1em 0.5em 1em;
+margin: 0 0 0.5em 0;
+max-width: 100%;
+min-width: 100%;
+width: 100%;
+box-sizing: border-box;
+position: sticky;
+top: 0;
+z-index: 2;
+display: flex;
+background-color: #720e9e
+}
+
+/* =================================================================================================================================== */
+
+@font-face {
+font-family: 'Bangers'; 
+src: url(Bangers-Regular.ttf); 
+}
+
 /* АДАПТИВНЫЙ РЕЖИМ ===================================================================================================== */
 
 @media (max-width: 800px) {
