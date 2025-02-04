@@ -1,33 +1,64 @@
+/*
+body {
+margin: 0;
+padding: 0;
+height: 100vh;
+min-width: 1000px;
+}
+*/
+
 .book {
-	font-family: Arial, sans-serif;
-	padding: 0 25%;
-	min-width: 31.25em;
+font-family: Arial, sans-serif;
+padding: 0 25%;
+min-width: 18.75em;
+background-color: #424242;
+color: #000000;
 }
 
 /* КАРТИНКА ======================================== */
 
 .book-img {
-	margin: 0 0 0.5em 0;
-	max-width: 100%;
+margin: 0 0 0.5em 0;
+max-width: 100%;
+height: auto;
 }
 
 /* КАРТИНКА ======================================== */
 
 .book-color-div {
-	margin: 0 0 0.5em 0;
-	padding: 0.5em;
-	background-color: #f1f1f1;
-	color: #000000;
-	max-width: 100%;
-	box-sizing: border-box;
+margin: 0 0 0.5em 0;
+padding: 0.5em;
+background-color: #f1f1f1;
+color: #000000;
+max-width: 100%;
+box-sizing: border-box;
 }
 
 /* ИКОНКИ ======================================== */
 
 .icon {
-    width: 30px; /* Ширина изображения */
-    height: 30px; /* Высота изображения */
-    margin-right: 10px; /* Отступ между изображением и текстом */
+width: 30px; /* Ширина изображения */
+height: 30px; /* Высота изображения */
+margin-right: 10px; /* Отступ между изображением и текстом */
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.block {
+width: 33%;
+margin: 0;
+padding: 5px;
+text-align: center;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+.block:hover {
+background-color: #aeaeae;
 }
 
 /* АДАПТИВНЫЙ РЕЖИМ ======================================== */
@@ -35,7 +66,8 @@
 @media (max-width: 800px) {
 
 .book {
-	padding: 0.5em;
+padding: 0.5em;
+width: auto;
 }
 
 }
