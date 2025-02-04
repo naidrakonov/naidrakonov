@@ -19,9 +19,10 @@ margin: 0;
 margin: 0 0 0.5em 0;
 padding: 0.5em;
 background-color: #333333;
-color: #000000;
+color: #ffffff;
 max-width: 100%;
 box-sizing: border-box;
+border-radius: 0.5em;
 }
 
 p {
@@ -33,7 +34,6 @@ margin: 0 0 0.5em 0;
 .main-block-img {
 margin: 0 0 0.5em 0;
 max-width: 100%;
-height: auto;
 }
 
 .main-block-container {
